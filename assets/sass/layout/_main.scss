@@ -145,7 +145,29 @@
 				}
 			}
 		}
+		
+		.skills {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;  /* Center the icons horizontally */
+			margin-top: 2em; /* Adjust margin as needed */
+		}
+		
+		.skill {
+			margin: 0 1em; /* Adjust spacing between icons */
+		}
+		
+		.skill img {
+			width: 50px; /* Adjust the size of the icons as needed */
+			height: 50px;
+			border-radius: 50%; /* Make the icons rounded */
+		}
 
+		.skills-section {
+			text-align: center; /* Center-align the heading */
+			margin-bottom: 2em; /* Add margin below the heading */
+		}
+		
 		@include breakpoint('<=small') {
 			> * {
 				@include padding((_size(padding) * 1), (_size(padding) * 1));
