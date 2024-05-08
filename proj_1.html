@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Project 1</title>
+		<title>Youtube Data Analysis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,21 +22,34 @@
 						<!-- Post -->
 							<section class="post">
                                 <header class = "major">
-                                    <h2>Project 1</h2>
+                                    <h2>Youtube Data Analysis</h2>
+									<h2>🎞📊</h2>
                                 </header>
-                                <br>
-								<header class="major">
-                                    <span class="date">April 25, 2017</span>
-									<h3>Project1</h3>
-									<p>Small intro</p>
-								</header>
-                                <p>Description</p>
-								<div class="image main"><img src="images/pic05.jpg" alt="" /></div>
-								<p>Additional description</p>
+								<h3>Summary 🚀</h3>
+                                <p>This project is a complete end-to-end data engineering solution as it goes from exploring and cleaning raw data of Youtube trending videos to analyzing it on Quicksight.
+									It includes the usage of relevant AWS services such as S3, Glue, Lambda, IAM and QuickSight. </p>
+								<h3>Tech Design</h3>
+								<div class="image main"><img src="images/projects/project1_yt_de_techdesign.svg" alt="" /></div>
+								<div class="row">
+									<div class="">
+										<h3>Objectives 🎯</h3>
+										<ul>
+											<li>Analyze raw structured data in different formats (json, csv) stored in a "raw" S3 bucket.</li>
+											<li>Clean the data using different AWS services such as Lambda and Glue ETL. Store the clean data in parquet format in a new "cleansed" S3 bucket.</li>
+											<li>Create a new analytics dataset in parquet format joining the cleansed datasets. Use Glue ETL for this process and store in a new "analytics" S3 bucket.</li>
+											<li>Use Glue Crawlers and Data Catalog to infer the data schema and query the data at multiple stages (raw, cleansed, analytics) using Athena.</li>
+											<li>Create a dashboard using QuickSight (BI tool) to analyze the data.</li>
+										</ul>
+									</div>
+								</div>
+
+
 								<ul class="actions special">
+									<li><a href="https://github.com/pablom11/Data-Engineering-Projects/blob/main/01-Youtube-Data-Analysis/README.md" class="button" target="_blank">Check it out</a></li>
 									<li><a href="index.html#posts" class="button">Go back</a></li>
 								</ul>
 								<br>
+								
 							</section>
 					</div>
 
